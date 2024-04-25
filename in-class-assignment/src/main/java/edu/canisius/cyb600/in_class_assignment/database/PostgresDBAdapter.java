@@ -138,7 +138,7 @@ public class PostgresDBAdapter extends AbstractDBAdapter {
 
     @Override
     public List<Actor> getAllActors() {
-        //First, we are going to open up a new statement
+        //First, we are going to open up a new statement now
         try (Statement statement = conn.createStatement()) {
             //This statement is easy
             //Select * from actor is saying "Return all Fields for all rows in films". Because there
